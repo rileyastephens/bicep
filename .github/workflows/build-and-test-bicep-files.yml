@@ -1,6 +1,6 @@
 name: ARM Template Build and Test
 
-on: [ push, pull_request ]
+on: [ push ]
 
 jobs:
   build_and_test:
@@ -21,7 +21,7 @@ jobs:
       uses: aliencube/arm-ttk-actions@v0.3
       id: armtest
       with:
-        path: ./bicep-modules/**/
+        path: ./bicep-modules/**/*.json
 
     - name: Show ARM TTK test result
       shell: bash
