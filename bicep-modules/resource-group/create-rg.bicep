@@ -2,18 +2,21 @@
 
 /* Parameters */
 targetScope = 'subscription'
-param rgName string
+param resourceGroupName string
 @allowed([
   'East US'
   'East US 2'
   'Central US'
 ])
 param location string
-param tags string
+param resourceTags object
 
 resource resourceGroup 'Microsoft.Resources/resourceGroups@2020-10-01' = {
-  name: rgName
+  name: resourceGroupName
   location: location
-  tags: tags
+  tags: resourceTags
   properties: {}
 }
+
+/* Outputs */
+output rgName string = resourceGroup.name
