@@ -8,4 +8,4 @@ git clone https://github.com/Azure/arm-ttk.git
 Import-Module .\arm-ttk\arm-ttk\arm-ttk.psd1
 
 # Test the Bicep modules
-Test-AzTemplate -TemplatePath .\bicep-modules\resource-group\create-rg.json
+Test-AzTemplate -TemplatePath .\bicep-modules\**\*.json
