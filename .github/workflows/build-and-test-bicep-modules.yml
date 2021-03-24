@@ -3,7 +3,7 @@ name: ARM Template Build and Test
 on:
   push:
     paths:
-      - 'bicep-modules'
+      - 'bicep-modules/**'
 
 jobs:
   build_and_test:
