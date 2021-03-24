@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "rgDeploymentName": {
+      "value": "bicepRG"
+    },
+    "rgName": {
+      "value": "rg-bicep"
+    },
+    "location": {
+      "value": "Central US"
+    },
+    "tags": {
+      "value": {
+        "Environment": "Dev",
+        "Project": "Tutorial",
+        "Owner": "Riley Stephens"
+      }
+    }
+  }
+}
