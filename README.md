@@ -1,6 +1,6 @@
 # Azure Bicep
 
-![Bicep Tests](https://github.com/rileyastephens/bicep/actions/workflows/build-and-test-bicep-files.yml/badge.svg)
+![Bicep Tests](https://github.com/rileyastephens/bicep/actions/workflows/build-and-test-bicep-modules.yml/badge.svg)
 
 ## Welcome!
 If you're new to Azure Bicep, welcome to the club!
