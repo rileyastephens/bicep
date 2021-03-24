@@ -3,7 +3,7 @@ name: ARM Template Build and Test
 on:
   push:
     paths:
-      - 'bicep-modules/**/*.bicep'
+      - 'bicep-modules/**'
 
 jobs:
   build_and_test:
@@ -18,7 +18,7 @@ jobs:
     - name: Run Bicep build
       uses: aliencube/bicep-build-actions@v0.1
       with:
-        files: './bicep-modules/**/*.bicep'
+        files: 'bicep-modules/**/*.bicep'
 
     - name: Run ARM TTK
       uses: aliencube/arm-ttk-actions@v0.3
