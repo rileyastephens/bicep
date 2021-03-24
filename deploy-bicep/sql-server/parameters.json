@@ -1,0 +1,28 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sqlServerDeploymentName": {
+            "value": "bicep-sql-deployment"
+        },
+        "location": {
+            "value": "Central US"
+        },
+        "sqlServerName": {
+            "value": "sql-mc-bicep"
+        },
+        "sqlAdminUser": {
+            "value": "riley-admin"
+        },
+        "sqlAdminPassword": {
+            "value": "S0meSampl3Pa$$word!"
+        },
+        "tags": {
+            "value": {
+                "Environment": "Dev",
+                "Project": "Tutorial",
+                "Owner": "Riley Stephens"
+            }
+        }
+    }
+}

@@ -1,6 +1,9 @@
 name: ARM Template Build and Test
 
-on: [ pull_request ]
+on:
+  push:
+    paths:
+      - 'bicep-modules/**/*.bicep'
 
 jobs:
   build_and_test:
