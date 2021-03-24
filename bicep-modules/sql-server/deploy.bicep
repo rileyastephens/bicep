@@ -15,7 +15,7 @@ resource sqlServer 'Microsoft.Sql/servers@2020-08-01-preview' = {
   properties: {
     administratorLogin: sqlAdministratorLogin
     administratorLoginPassword: sqlAdministratorLoginPassword
-    minimalTlsVersion: '1.1'
+    minimalTlsVersion: '1.2'
     version: '12.0'
   }
 }

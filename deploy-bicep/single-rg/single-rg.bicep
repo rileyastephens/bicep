@@ -7,7 +7,7 @@ param rgName string
 param location string
 param tags object
 
-module resourceGroupModule '../../bicep-modules/resource-group/create-rg.bicep' = {
+module resourceGroupModule '../../bicep-modules/resource-group/deploy.bicep' = {
   name: rgDeploymentName
   params: {
     resourceGroupName: rgName

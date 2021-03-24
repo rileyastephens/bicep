@@ -9,7 +9,7 @@ param sqlAdminUser string
 param sqlAdminPassword string
 param tags object
 
-module sqlServerModule '../../bicep-modules/sql-server/create-sql-server.bicep' = {
+module sqlServerModule '../../bicep-modules/sql-server/deploy.bicep' = {
   name: sqlServerDeploymentName
   params: {
     sqlServerName: sqlServerName
