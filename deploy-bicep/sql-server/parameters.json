@@ -2,9 +2,6 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "sqlServerDeploymentName": {
-            "value": "bicep-sql-deployment"
-        },
         "location": {
             "value": "Central US"
         },
@@ -16,6 +13,15 @@
         },
         "sqlAdminPassword": {
             "value": "S0meSampl3Pa$$word!"
+        },
+        "dbName": {
+            "value": "sqldb-bicep-sample"
+        },
+        "dbSkuName": {
+            "value": "S0"
+        },
+        "dbSkuTier": {
+            "value": "Standard"
         },
         "tags": {
             "value": {
