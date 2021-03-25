@@ -3,7 +3,7 @@
 /* Parameters */
 param sqlServer string
 param databaseName string
-param location string = resourceGroup().location
+param location string
 param skuName string
 param skuTier string
 param resourceTags object

@@ -2,7 +2,7 @@
 
 /* Parameters */
 param sqlServerName string
-param location string = resourceGroup().location
+param location string
 param sqlAdministratorLogin string
 @secure()
 param sqlAdministratorLoginPassword string
